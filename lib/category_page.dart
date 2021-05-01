@@ -12,7 +12,7 @@ class CategoryPage extends StatelessWidget {
       body: 
       GridView(
         padding: EdgeInsets.all(10),
-        children: dummyData.map((category) => CategoryItem(category)).toList(),
+        children: DUMMY_CATEGORIES.map((category) => CategoryItem(category)).toList(),
 
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
