@@ -5,11 +5,12 @@ import 'package:meals_app/dummy_data.dart';
 class CategoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('MEals'),
-      ),
-      body: 
+    return 
+    // Scaffold(
+    //   appBar: AppBar(
+    //     title: const Text('MEals'),
+    //   ),
+    //   body: 
       GridView(
         padding: EdgeInsets.all(10),
         children: DUMMY_CATEGORIES.map((category) => CategoryItem(category)).toList(),
@@ -19,7 +20,7 @@ class CategoryPage extends StatelessWidget {
             childAspectRatio: 3 / 2,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20),
-      ),
+      // ),
     );
   }
 }
